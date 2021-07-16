@@ -8,4 +8,4 @@ TIE-Awards-Example
    A: I will make each image load with a blur effect and create an animated mouse hover state.
    
 5) Given more time what would you further improve?
-   A: It would have contained all the correct images and been more responsive.
+   A: It would have contained all the correct award images and been more responsive.
