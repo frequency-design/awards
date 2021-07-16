@@ -1,0 +1,68 @@
+/* Award Image CSS */
+
+.award-image {
+	display: block;
+	min-height: 5rem;
+	background: #fff center center no-repeat;
+	background-size: cover;
+	filter: blur(6px); /* blur small image */
+	border-radius: 11px;
+}
+
+.award-image > img {
+	display: block;
+	width: 100%;
+	opacity: 0; /* hide the img element */
+}
+
+.award-image.fully-loaded {
+	filter: none; /* remove the blur on large image */
+	transition: filter 1s;
+}
+
+
+/* Layout CSS */
+
+html {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+ body {
+ 	background: #00abc7;
+}
+
+h1,h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h5 {
+	text-align: center;
+}
+
+.award-list {
+	display: block;
+	margin: 1rem auto;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.award {
+	display: inline-block;
+	width: 90%;
+	max-width: 20rem;
+	margin: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	overflow: hidden;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.award:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
